@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {  
-                bat 'docker build -t sachi/myapp-test:%BUILD_NUMBER% .'
+                bat 'docker build -t sweerasingha/myapp-test:%BUILD_NUMBER% .'
             }
         }
         stage('Login to Docker Hub') {
